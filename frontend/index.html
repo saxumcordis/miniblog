@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <script type="text/javascript" src="src/jquery-3.5.0.min.js"></script>
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="src/utils/main.js"></script>
+    <script src="src/render/header.js"></script>
+    <script src="src/render/userlist.js"></script>
+    <script src="src/render/feed.js"></script>
+    <script src="src/render/settings.js"></script>
+    <script src="src/utils/register.js"></script>
+    <script src="src/utils/systemMessages.js"></script>
+    <script src="src/utils/restorePass.js"></script>
+</head>
+<body>
+<div class="blog">
+    <div class="login">
+        <div class="info">
+            <h2>Welcome</h2>
+            <p>The Future Is Here</p>
+        </div>
+        <form id="login_form" class="form" onsubmit="return false;">
+            <ul class="noBullet">
+                <li>
+                    <input id="loginEmail" class="inputFields" type="email" placeholder="email" value="" required>
+                </li>
+                <li>
+                    <input id="loginPassword" class="inputFields" type="password" placeholder="password" value=""
+                           required>
+                </li>
+                <li>
+                    <button class="btn" onclick="isFilled() ? handleLogin() : false;">sign in</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="switchLoginForms('login')">registration</button>
+                </li>
+                <li style="margin-top: 10px">
+                    <a href="#" onclick="switchLoginForms('login2')">forgot the password</a>
+                </li>
+            </ul>
+        </form>
+        <form id="register_form" class="form"  onsubmit="return false;" hidden>
+            <ul class="noBullet">
+                <li>
+                    <input id="emailRegister" style="margin-top:-50px"  class="inputFields" type="email" placeholder="email"
+                           value="" required>
+                </li>
+                <li>
+                    <input id="passwordRegister" class="inputFields" type="password" placeholder="password"
+                           value="" oninput="return passwordValidation(this.value)" required>
+                </li>
+                <li>
+                    <input id="repeatPassword" class="inputFields" type="password" placeholder="confirm password"
+                           value="" oninput="return isRepeatedPass()" required>
+                </li>
+                <li>
+                    <input id="nameRegister" class="inputFields" type="text" placeholder="name" value=""
+                           oninput="return nameValidation(this.value)" required>
+                </li>
+                <li>
+                    <button class="btn" onclick="isFilledRegCorrect() ? startRegister() : false">register</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="switchLoginForms('register')">back</button>
+                </li>
+            </ul>
+        </form>
+        <form id="restore_form" class="form"  onsubmit="return false;" hidden>
+            <ul class="noBullet">
+                <li>
+                    <input id="nameRestore"  class="inputFields" type="text" placeholder="name" value=""
+                           required>
+                </li>
+                <li>
+                    <input id="emailRestore"  class="inputFields" type="email" placeholder="email"
+                           value="" required>
+                </li>
+                <li>
+                    <input id="passwordRestore" class="inputFields" type="password" placeholder="new password" value=""
+                           oninput="return passwordValidation(this.value)" required>
+                </li>
+                <li>
+                    <button class="btn" onclick="isFilledResCorrect() ? restoreUser() : false">restore</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="switchLoginForms('restore')">back</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>
+<script src="src/utils/login.js"></script>
+</body>
+</html>
