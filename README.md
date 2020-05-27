@@ -1,7 +1,7 @@
 # miniblog
 **Mini blog using JS front and PHP back.**  
 
-**SCREENSHOTS**
+**SCREENSHOTS**  
 Login form  
 ![alt tag](https://sun7-9.userapi.com/BK5MT_6us5hD0ehPkT5P0-a-DmpIV7-s8JA9lg/LNAJDcefC70.jpg "login form")  
 Register form  
