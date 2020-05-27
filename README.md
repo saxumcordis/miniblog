@@ -10,7 +10,7 @@ Wrong login
 ![alt tag](https://sun7-8.userapi.com/7DWaF8SrBLDK8Znx0BF1TKBkN9k7GZMI9QI6CQ/rvkrf76OLGY.jpg "Error")  
 Wrong register  
 ![alt tag](https://sun7-9.userapi.com/7-JZVAGToNCi_PoUJPsSa2SnNOOx1Lte2thqoQ/NLjUd_ulGOk.jpg "Wrong register")  
-Sucess register  
+Success register  
 ![alt tag](https://sun7-9.userapi.com/6KjCyWV_n8g3a9fVsBZgGiQJ-gEPMw-IgtQ50g/K9w8cOsh2p8.jpg "sucess register")  
 Main page  
 ![alt tag](https://sun7-9.userapi.com/stvQO048XSFLsYmpYM1S6tjoLf9RsD1ykAEMlg/b9WHgDVzk1w.jpg "index")  
